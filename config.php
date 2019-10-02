@@ -5,7 +5,7 @@ $user="root";
 $password="";
 
 
-$conx = @mysqli_connect($server,$user,$password,$db);
+$conx = mysqli_connect($server,$user,$password,$db);
 if(!$conx) die ("erreur de connexion".mysqli_connect_error());
 
 

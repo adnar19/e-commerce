@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  mer. 02 oct. 2019 à 22:20
+-- Généré le :  mer. 02 oct. 2019 à 23:18
 -- Version du serveur :  10.1.40-MariaDB
 -- Version de PHP :  7.3.5
 
@@ -34,6 +34,14 @@ CREATE TABLE `categorie` (
   `description` text NOT NULL,
   `photo` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `categorie`
+--
+
+INSERT INTO `categorie` (`id`, `nom`, `description`, `photo`) VALUES
+(1, 'meuble', 'premiere categorie', '../images/img1.jpg'),
+(2, 'mobiles', 'samsung, lg , iphone', '../images/img2.jpg');
 
 -- --------------------------------------------------------
 
@@ -94,7 +102,7 @@ ALTER TABLE `stock`
 -- AUTO_INCREMENT pour la table `categorie`
 --
 ALTER TABLE `categorie`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT pour la table `contact`

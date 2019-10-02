@@ -2,10 +2,8 @@
  $data = array();
 include '../config.php';
 
-
-$sql="SELECT * FROM categorie";
-$result=mysqli_query($conx,$sql);
-foreach($result as $row) {
+$result_one = $file_db->query("SELECT * FROM categorie ");
+foreach($result_one as $row) {
  $data[]  = $row;
 }
 
@@ -13,9 +11,6 @@ foreach($result as $row) {
 
 
   $json = json_encode( $data);
-
-echo $json;
-
 header("Content-type: application/json");
 exit(  $json );
   ?>

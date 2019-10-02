@@ -2,29 +2,28 @@
 var liste =[];
 
 
-
-  function AfficherResultats() {
-
+function Actualiser() {
   $.ajax({
     dataType: "json",
     url: 'json/categorie.php',
     success: function(resultats){
-console.log(resultats);
+
       liste=resultats;
+      AfficherResultats();
+console.log(resultats);
+
     }
   });
+}
 
-
-
-  var html = '';
-
+function AfficherResultats() {
+  var html ='' ;
   for (var i = 0; i < liste.length; i++) {
-  html +='<tr><td>'+liste[i].id+'</td><td>'+liste[i].nom+'</td><td>'+liste[i].description+'</td></tr>';
-   i++;
+    html +='<img src="'+liste[i].photo+'" class="card-img-top" ><div class="card-body"><h5 class="card-title">'+liste[i].nom+'</h5><p class="card-text">'+
+    liste[i].description+'</p>';
   }
 
   $('#res').html(html);
 }
 
-
-  AfficherResultats();
+$(document).on("ready",Actualiser());
