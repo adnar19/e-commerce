@@ -10,8 +10,6 @@ foreach($result as $row) {
 }
 
 
-
-
   $json = json_encode( $data);
 
 echo $json;
