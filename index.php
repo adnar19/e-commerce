@@ -59,8 +59,13 @@ include 'config.php';
     </div>
   </div>
 </div>
+
+
+
+
   </body>
 
 
       <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/categorie.js"></script>
 </html>

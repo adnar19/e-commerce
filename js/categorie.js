@@ -19,9 +19,12 @@ console.log(resultats);
   var html = '';
 
   for (var i = 0; i < liste.length; i++) {
-  html +='<tr onclick="setTr(this)" data-id="'+liste[i].id+'" ><td>'+liste[i].id+'</td><td>'+liste[i].nom+'</td><td>'+liste[i].prenom+'</td><td>'+liste[i].tel+'</td></tr>';
-   
+  html +='<tr><td>'+liste[i].id+'</td><td>'+liste[i].nom+'</td><td>'+liste[i].description+'</td></tr>';
+   i++;
   }
 
   $('#res').html(html);
 }
+
+
+  AfficherResultats();
