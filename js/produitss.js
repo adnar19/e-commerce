@@ -5,13 +5,11 @@ var liste =[];
 function Actualiser() {
   $.ajax({
     dataType: "json",
-    url: 'json/categorie.php',
+    url: 'json/produitss.php',
     success: function(resultats){
-
+      alert(resultats);
       liste=resultats;
       AfficherResultats();
-console.log(resultats);
-
     }
   });
 }

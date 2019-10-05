@@ -9,7 +9,7 @@ include 'config.php';
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.min.css" >
 <link rel="stylesheet" href="css/index.css" >
-    <title></title>
+    <title>home</title>
   </head>
   <body>
 
@@ -22,5 +22,5 @@ include 'config.php';
 
 
       <script src="js/jquery-3.4.1.min.js"></script>
-        <script src="js/categorie.js"></script>
+        <script src="js/produitss.js"></script>
 </html>

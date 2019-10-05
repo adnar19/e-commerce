@@ -2,12 +2,10 @@
  $data = array();
 include '../config.php';
 
-$result_one = $file_db->query("SELECT * FROM categorie ");
+$result_one = $file_db->query("SELECT * FROM stock ");
 foreach($result_one as $row) {
  $data[]  = $row;
 }
-
-
 
 
   $json = json_encode( $data);
