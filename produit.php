@@ -8,5 +8,9 @@
 
     <img src="images/null.png" class="img-thumbnail" style="width:400px; height:400px;">
 
+    <div class="">
+
+    </div>
+
   </body>
 </html>
