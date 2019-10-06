@@ -1,16 +1,9 @@
-/* .slide{
 
-  height: 300px;
-  width: 600px;
-  display: inline-block;
-  margin-top: 40px;
-  margin-right: 100px;
-  margin-left: 100px;
 
-} */
-.container{
+.slider{
   margin-top: 6%;
   margin-bottom: 6%;
+
 }
 .inner{
   overflow: hidden;

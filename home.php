@@ -31,6 +31,31 @@ $i++;
 }
 
 
+
+$sql2="SELECT * FROM stock";
+$qry2= mysqli_query($conx,$sql2);
+
+$img='';
+$info='';
+while ($row= mysqli_fetch_array($qry2)) {
+
+$img .='<div class="row justify-content-center">
+  <div class="col-md-4 col-sm-12">
+    <div class="card shadow" style="width: 20rem;">
+      <div class="inner">
+         <img src="images/'.$row['photo'].'" class="card-img-top" alt="Card image cap">
+         </div>
+         <div class="card-body text-center">
+        <h5 class="card-title">'.$row['titre'].'</h5>
+         <p class="card-text">'.$row['description'].'</p>
+       <a href="#" class="btn btn-success">voir plus</a>
+       </div>
+       </div>
+         </div>
+       </div>
+         ';
+
+}
  ?>
 
 
@@ -44,12 +69,12 @@ $i++;
     <title></title>
   </head>
 
-  <body>
+  <body style="background-color:#eeeeee;">
 
 
 
 
-<div class="container">
+<div class="container slider">
   <div class="row justify-content-center">
     <div class="col-md-12">
 
@@ -77,57 +102,12 @@ $i++;
 
 
 
-
-
-
 <div class="container">
-  <div class="row justify-content-center">
-    <div class="col-md-4 col-sm-12">
-      <div class="card shadow" style="width: 20rem;">
-        <div class="inner">
 
-          <img src="images/null.png" class="card-img-top" alt="Card image cap">
-        </div>
-  <div class="card-body text-center">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-success">Go somewhere</a>
-  </div>
-</div>
-    </div>
-
-
-    <div class="col-md-4">
-      <div class="card shadow" style="width: 20rem;">
-        <div class="inner">
-          <img src="images/null.png" class="card-img-top" alt="Card image cap">
-        </div>
-    <div class="card-body text-center">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-success">Go somewhere</a>
-    </div>
-    </div>
-    </div>
-
-
-    <div class="col-md-4">
-      <div class="card shadow" style="width: 20rem;">
-        <div class="inner">
-
-          <img src="images/null.png" class="card-img-top" alt="Card image cap">
-        </div>
-  <div class="card-body text-center">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-success">Go somewhere</a>
-  </div>
-</div>
-    </div>
+<?php echo $img; ?>
 
 
 
-  </div>
 </div>
 
 
