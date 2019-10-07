@@ -17,17 +17,17 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
          <li>
-           <a class="navbar-brand" href="#">brand</a>
+           <a class="navbar-brand" href="produits.php">brand</a>
          </li>
           <li class="nav-item ">
-            <a class="nav-link" href="#">categorie1 </a>
+            <a class="nav-link" href="produits.php">categorie1 </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">categorie2</a>
+            <a class="nav-link" href="produits.php">categorie2</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">categorie3</a>
+            <a class="nav-link" href="contact.php">contact us</a>
           </li>
         </ul>
 
